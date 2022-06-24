@@ -16,7 +16,7 @@ public class Example {
 		
 		int number;
 		Scanner scan = new Scanner(System.in);
-		
+		scan.close();
 		do {
 			System.out.println("enter a number :");
 			number = scan.nextInt();
