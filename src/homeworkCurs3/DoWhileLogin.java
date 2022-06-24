@@ -17,27 +17,27 @@ public class DoWhileLogin {
 
 		do {
 
-			i++;
 
 			System.out.println("Please enter your user:");
 			userIntrodus = scan.next();
 			System.out.println("Please enter your password:");
 			passIntrodus = scan.nextInt();
+			
 			if (userIntrodus.equals(user) && passIntrodus == (password)) {
 				System.out.println("Login Successful!");
 				break;
-			} else if (!userIntrodus.equals("TestUser") && passIntrodus != (1234)) {
+			} else if (i<2) {
 				System.out.println("Login Error!");
-			}else if (userIntrodus.equals("TestUser") && passIntrodus != (1234)) {
-				System.out.println("Login Error!");
-			}else if (!userIntrodus.equals("TestUser") && passIntrodus == (1234)) {
-				System.out.println("Login Error!");
+			i++;
 				
 			}
+			
+			else {
+				System.out.println("Maximum attempts reached. User blocked!");
+				break;
+			}
 
-		} while ((!userIntrodus.equals("TestUser") && passIntrodus != (1234) && i++ <= 3));
-		System.out.println("Maximum attempts reached. User blocked!");
-		
+		} while ( i < 3);
 		
 	
 	}
