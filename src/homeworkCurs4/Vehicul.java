@@ -5,45 +5,32 @@ public class Vehicul {
 	private String brand;
 	private int nivelPoluare;
 	private int vitezaMedie;
-	public String nume;
-	public String motorizare;
 	
-	
-	public String getBrand() {
-		return brand;
-	}
-	public void setBrand(String brand) {
+	public Vehicul() {
 		this.brand = brand;
-	}
-	public int getNivelPoluare() {
-		return nivelPoluare;
-	}
-	public void setNivelPoluare(int nivelPoluare) {
 		this.nivelPoluare = nivelPoluare;
-	}
-	public int getVitezaMedie() {
-		return vitezaMedie;
-	}
-	public void setVitezaMedie(int vitezaMedie) {
 		this.vitezaMedie = vitezaMedie;
 	}
 	
 	public String nume() {
-		return nume;
+		return "nume general";
 	}
+	
 	public String motorizare() {
-		return motorizare;
+		return "motorizare generica";
 	}
+	public void detaliiVehicul() {
+		System.out.println("Nivelul de poluare pentru masina " + brand() + " este: " + 
+				nivelPoluare() + " si viteza medie atinsa este de " + VitezaMedie() + " km/h.");
+	}
+	
+	
+}
 	
 		
-	public void detaliiVehicul() {
-		System.out.println();
+
 	
-	}
-	public void verificareMotorizare() {
-		System.out.println();
-	}
-}
+
 			
 			
 			

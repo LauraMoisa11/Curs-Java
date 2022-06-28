@@ -2,21 +2,20 @@ package homeworkCurs4;
 
 public class Masina extends Vehicul {
 
-	public Masina(String brand, int nivelPoluare, int vitezaMedie, String nume, String motorizare) {
-		setBrand(brand);
-		setNivelPoluare(nivelPoluare);
-		setVitezaMedie(vitezaMedie);
-		
+	public Masina(String brand, int nivelPoluare, int vitezaMedie) {
+		super(brand, nivelPoluare, vitezaMedie);
 	}
+	
+	
 	
 
 	@Override
-	public void detaliiVehicul() {
-		
-		System.out.println();
+	public void String nume() {
+		return "masina";
 	}
-	public void verificaMotorizare() {
-		System.out.println();
+	@Override
+	public void String motorizare() {
+		return "motor";
 	}
 	
 }
