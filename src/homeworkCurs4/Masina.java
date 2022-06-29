@@ -10,11 +10,11 @@ public class Masina extends Vehicul {
 	
 
 	@Override
-	public void String nume() {
+	public String nume() {
 		return "masina";
 	}
 	@Override
-	public void String motorizare() {
+	public String motorizare() {
 		return "motor";
 	}
 	

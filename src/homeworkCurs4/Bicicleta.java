@@ -1,22 +1,20 @@
 package homeworkCurs4;
 
-public class Bicicleta extends Vehicul{
-	
-	public Bicicleta(String brand, int nivelPoluare, int vitezaMedie, String nume, String motorizare) {
-		setBrand(brand);
-		setNivelPoluare(nivelPoluare);
-		setVitezaMedie(vitezaMedie);
+public class Bicicleta extends Vehicul {
+
+	public Bicicleta(String brand, int nivelPoluare, int vitezaMedie) {
+		super(brand, nivelPoluare, vitezaMedie);
 		
 	}
-		
 	
 	@Override
-	public void detaliiVehicul() {
-		
-		System.out.println(nume);
+	public String nume() {
+		return "bicicleta";
 	}
-	public void verificaMotorizare() {
-		System.out.println(motorizare);
+	
+	@Override
+	public String motorizare() {
+		return "pedale";
 	}
+	
 }
-

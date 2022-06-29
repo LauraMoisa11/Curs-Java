@@ -6,7 +6,7 @@ public class Vehicul {
 	private int nivelPoluare;
 	private int vitezaMedie;
 	
-	public Vehicul() {
+	public Vehicul(String brand, int nivelPoluare, int vitezaMedie) {
 		this.brand = brand;
 		this.nivelPoluare = nivelPoluare;
 		this.vitezaMedie = vitezaMedie;
@@ -20,8 +20,8 @@ public class Vehicul {
 		return "motorizare generica";
 	}
 	public void detaliiVehicul() {
-		System.out.println("Nivelul de poluare pentru masina " + brand() + " este: " + 
-				nivelPoluare() + " si viteza medie atinsa este de " + VitezaMedie() + " km/h.");
+		System.out.println("Nivelul de poluare pentru vehiculul " + brand + " este: " + 
+				nivelPoluare + " si viteza medie atinsa este de " + vitezaMedie + " km/h.");
 	}
 	
 	
