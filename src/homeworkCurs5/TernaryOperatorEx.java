@@ -9,7 +9,7 @@ public class TernaryOperatorEx {
 		int factura;
 		
 		Scanner scan  = new Scanner(System.in);
-		System.out.println("Intruduceti suma facturii :");
+		System.out.println("Intruoduceti suma facturii :");
 		factura =  scan.nextInt();
 		
 		
