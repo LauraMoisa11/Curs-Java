@@ -9,42 +9,46 @@ public class Arrays {
 public static void main(String[] args) {
 	
 		int numar;
-		int numar2;
 	
 		Scanner scan  = new Scanner(System.in);
-		System.out.println("Te rog introdu un numar intre 1 si 12 :");
-		numar =  scan.nextInt();
+		
 		
 
 		
 		String[]luni = new String[13];
-		luni [0] = null;
-		luni [1] = "Ianuarie";
-		luni [2] = "Februarie";
-		luni [3] = "Martie";
-		luni [4] = "Aprilie";
-		luni [5] = "Mai";
-		luni [6] = "Iunie";
-		luni [7] = "Iulie";
-		luni [8] = "August";
-		luni [9] = "Septembrie";
-		luni [10] = "Octombrie";
-		luni [11] = "Noiembrie";
-		luni [12] = "Decembrie";
+		luni [0] = "Ianuarie";
+		luni [1] = "Februarie";
+		luni [2] = "Martie";
+		luni [3] = "Aprilie";
+		luni [4] = "Mai";
+		luni [5] = "Iunie";
+		luni [6] = "Iulie";
+		luni [7] = "August";
+		luni [8] = "Septembrie";
+		luni [9] = "Octombrie";
+		luni [10] = "Noiembrie";
+		luni [11] = "Decembrie";
+		
+		do {
+			System.out.println("Te rog introdu un numar intre 1 si 12 :");
+			numar =  scan.nextInt();
+			
+			if(numar >0 && numar <= 12) {
+				System.out.println(luni[numar-1]);
+				break;
+			
+			}else {
+				
+				System.out.println("Numarul este invalid. Te rog introdu un alt numar : ");
+				numar = scan.nextInt();
+				continue;
+				
+				
+			} }while(numar > luni.length);
 	
 		
 		
-	if(numar >0 && numar <= 12) {
-			System.out.println(luni[numar]);
-		
-		}else {
-			
-			System.out.println("Numarul este invalid. Te rog introdu un alt numar : ");
-			numar2 = scan.nextInt();
-			System.out.println(luni[numar2]);
-			
-			
-		} 
+	
 		
 }
 }
